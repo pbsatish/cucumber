@@ -1,0 +1,260 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>CucumberProject2</groupId>
+  <artifactId>CucumberProject2</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>CucumberProject2</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+     <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+	  <groupId>pl.pragmatists</groupId>
+	  <artifactId>JUnitParams</artifactId>
+	  <version>1.0.5</version>
+	  <scope>test</scope>
+	</dependency> 
+    <!-- https://mvnrepository.com/artifact/org.json/json 
+	https://stackoverflow.com/questions/2591098/how-to-parse-json-in-java-->
+	<dependency>
+    	<groupId>org.json</groupId>
+    	<artifactId>json</artifactId>
+    	<version>20180813</version>
+	</dependency>
+	<!-- How to Read and Write JSON using GSON -->
+	<dependency>
+	  <groupId>com.google.code.gson</groupId>
+	  <artifactId>gson</artifactId>
+	  <version>2.7</version>
+	</dependency>
+    
+	<dependency>
+	    <groupId>com.googlecode.json-simple</groupId>
+	    <artifactId>json-simple</artifactId>
+	    <version>1.1.1</version>
+	</dependency>
+	
+	 <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+    <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.5</version>
+    </dependency>
+	<dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.141.59</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.14.2</version>
+			<scope>test</scope>
+		</dependency>
+    	
+    
+    <dependency>
+    	<groupId>com.aventstack</groupId>
+    	<artifactId>extentreports</artifactId>
+    	<version>3.0.7</version>
+   </dependency>
+   
+   <!-- https://github.com/ronmamo/reflections -->
+   <dependency>
+    	<groupId>org.reflections</groupId>
+    	<artifactId>reflections</artifactId>
+    	<version>0.9.11</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
+	<dependency>
+	        <groupId>org.apache.pdfbox</groupId>
+	        <artifactId>pdfbox</artifactId>
+	        <version>2.0.14</version>
+	</dependency>
+	
+		<!-- >
+	<dependency>
+	        <groupId>org.apache.pdfbox</groupId>
+	        <artifactId>pdfbox</artifactId>
+	        <version>1.8.16</version>
+	</dependency>-->
+	
+	
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.19</version>
+	</dependency>
+
+	<!-- Thanks for using https://jar-download.com -->
+    <!-- important -->
+	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi-ooxml</artifactId>
+		<version>3.17</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.commons</groupId>
+	    <artifactId>commons-io</artifactId>
+	    <version>1.3.2</version>
+	</dependency>
+		
+	<dependency>
+	    <groupId>log4j</groupId>
+	    <artifactId>log4j</artifactId>
+	    <version>1.2.17</version>
+	</dependency>
+	<dependency>
+        <groupId>fr.opensagres.xdocreport</groupId>
+        <artifactId>fr.opensagres.xdocreport.converter.docx.xwpf</artifactId>
+        <version>2.0.1</version>
+    </dependency>
+    <dependency>
+        <groupId>fr.opensagres.xdocreport</groupId>
+        <artifactId>fr.opensagres.xdocreport.converter</artifactId>
+        <version>2.0.1</version>
+    </dependency>
+    <dependency>
+        <groupId>fr.opensagres.xdocreport</groupId>
+        <artifactId>fr.opensagres.poi.xwpf.converter.pdf</artifactId>
+        <version>2.0.1</version>
+    </dependency>
+    <dependency>
+        <groupId>fr.opensagres.xdocreport</groupId>
+        <artifactId>fr.opensagres.poi.xwpf.converter.xhtml</artifactId>
+        <version>2.0.1</version>
+    </dependency>
+    <dependency> 
+		<groupId>fr.opensagres.xdocreport</groupId> 
+		<artifactId>org.apache.poi.xwpf.converter.pdf</artifactId> 
+		<version>LATEST</version> 
+	</dependency>
+
+	<dependency>
+    	<groupId>com.documents4j</groupId>
+    	<artifactId>documents4j-local</artifactId>
+    	<version>1.0.3</version>
+	</dependency>
+	<dependency>
+    	<groupId>com.documents4j</groupId>
+    	<artifactId>documents4j-transformer-msoffice-word</artifactId>
+    	<version>1.0.3</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/com.documents4j/documents4j-util-standalone -->
+	<dependency>
+	    <groupId>com.documents4j</groupId>
+	    <artifactId>documents4j-util-standalone</artifactId>
+	    <version>1.0.3</version>
+	</dependency>
+	<!-- always needed -->     
+	<!-- https://mvnrepository.com/artifact/com.itextpdf/itext7-core -->   
+		
+	<dependency>
+		<groupId>com.itextpdf</groupId>
+    	<artifactId>itextpdf</artifactId>
+		<version>5.0.6</version>
+	</dependency>
+			
+       <!-- always needed --> 
+  <!-- https://mvnrepository.com/artifact/com.github.2gis.winium/winium-webdriver -->
+	<dependency>
+	    <groupId>com.github.2gis.winium</groupId>
+	    <artifactId>winium-webdriver</artifactId>
+	    <version>0.1.0-1</version>
+	</dependency>
+	<!-- cucumber plugins "cucumber-core,cucumber-html,cobertura,cucumber-java,cucumber-testng,cucumber-jvm-deps,cucumber-reporting,hamcrest-core,gherkin,selenium-java" -->
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-core</artifactId>
+	    <version>5.5.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-html -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-html</artifactId>
+	    <version>0.2.7</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-java</artifactId>
+	    <version>5.5.0</version>
+	</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-junit</artifactId>
+	    <version>5.5.0</version>
+	    <scope>test</scope>
+	</dependency>
+
+
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-jvm-deps</artifactId>
+	    <version>1.0.6</version>
+	    <scope>provided</scope>
+	</dependency>
+		<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+	<dependency>
+	    <groupId>net.masterthought</groupId>
+	    <artifactId>cucumber-reporting</artifactId>
+	    <version>5.1.1</version>
+	</dependency>
+		<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
+	<dependency>
+	    <groupId>org.hamcrest</groupId>
+	    <artifactId>hamcrest-core</artifactId>
+	    <version>2.2</version>
+	    <scope>test</scope>
+	</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+	<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>gherkin</artifactId>
+	    <version>5.1.0</version>
+	</dependency>
+		
+	<!-- https://mvnrepository.com/artifact/net.sourceforge.cobertura/cobertura -->
+	<dependency>
+	    <groupId>net.sourceforge.cobertura</groupId>
+	    <artifactId>cobertura</artifactId>
+	    <version>1.9.4.1</version>
+	    <scope>test</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-picocontainer</artifactId>
+	    <version>5.5.0</version>
+	    <scope>test</scope>
+	</dependency>
+	
+  </dependencies>
+</project>

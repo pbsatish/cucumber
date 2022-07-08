@@ -26,7 +26,7 @@ public class TestRun {
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		//features = {"D://Day3_Cucumber//CucumberProject2//Login.feature"},
-		features = "classpath:features/Login.feature",
+		features = {"classpath:features/Login.feature"},
 		glue="stepDefinitions",
 		strict=true,// it will check if any step is not defined in Step Definitions file
 		plugin = {"pretty", "html:target/cucumber-html-report"},
